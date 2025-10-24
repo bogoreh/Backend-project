@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 My To-Do List</h1>
+        </header>
+
+        <div class="add-todo">
+            <input type="text" id="todoTitle" placeholder="What needs to be done?" maxlength="100">
+            <input type="text" id="todoDescription" placeholder="Description (optional)" maxlength="200">
+            <button onclick="addTodo()">Add Todo</button>
+        </div>
+
+        <div class="filters">
+            <button onclick="filterTodos('all')" class="active">All</button>
+            <button onclick="filterTodos('active')">Active</button>
+            <button onclick="filterTodos('completed')">Completed</button>
+        </div>
+
+        <div id="todoList" class="todo-list">
+            <!-- Todos will be loaded here -->
+        </div>
+
+        <div class="stats">
+            <span id="todoCount">0 items left</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
