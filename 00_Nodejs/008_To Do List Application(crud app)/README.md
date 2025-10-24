@@ -19,3 +19,7 @@ A basic CRUD (Create, Read, Update, Delete) To-Do List application built with No
 3. Install dependencies:
    ```bash
    npm install
+   # Install it globally or as dev dependency
+   npm install -g nodemon
+   # or
+   npm install --save-dev nodemon
