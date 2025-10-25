@@ -1,0 +1,34 @@
+CREATE DATABASE call_center;
+USE call_center;
+
+CREATE TABLE agents (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(20),
+    department VARCHAR(50),
+    status ENUM('active', 'inactive') DEFAULT 'active',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE customers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100),
+    phone VARCHAR(20),
+    address TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE calls (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT,
+    agent_id INT,
+    call_type ENUM('incoming', 'outgoing'),
+    duration INT,
+    status ENUM('completed', 'missed', 'callback'),
+    notes TEXT,
+    call_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (customer_id) REFERENCES customers(id),
+    FOREIGN KEY (agent_id) REFERENCES agents(id)
+);
