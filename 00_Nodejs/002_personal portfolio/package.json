@@ -1,0 +1,17 @@
+{
+  "name": "002_personal-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["portfolio", "nodejs", "express"],
+  "author": "Abdibogoreh",
+  "license": "ISC",
+  "type": "commonjs"
+}
