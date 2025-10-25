@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simple Quiz App</h1>
+            <p>Test your knowledge with this simple quiz!</p>
+        </header>
+
+        <main>
+            <!-- Quiz Start Screen -->
+            <div id="start-screen" class="screen active">
+                <h2>Welcome to the Quiz!</h2>
+                <p>This quiz contains 5 questions. Try to answer all of them correctly!</p>
+                <button id="start-btn" class="btn">Start Quiz</button>
+            </div>
+
+            <!-- Quiz Screen -->
+            <div id="quiz-screen" class="screen">
+                <div class="quiz-header">
+                    <div id="progress">Question <span id="current-question">1</span> of <span id="total-questions">5</span></div>
+                    <div id="timer">Time: <span id="time">0</span>s</div>
+                </div>
+                
+                <form id="quiz-form">
+                    <div id="question-container"></div>
+                    <div class="navigation">
+                        <button type="button" id="prev-btn" class="btn btn-secondary">Previous</button>
+                        <button type="button" id="next-btn" class="btn">Next</button>
+                        <button type="submit" id="submit-btn" class="btn btn-primary" style="display: none;">Submit Quiz</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="results-screen" class="screen">
+                <h2>Quiz Results</h2>
+                <div id="score-display"></div>
+                <div id="results-details"></div>
+                <button id="restart-btn" class="btn">Take Quiz Again</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
