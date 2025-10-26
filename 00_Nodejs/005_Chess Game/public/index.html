@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Chess Game</h1>
+        <div class="game-info">
+            <div id="current-player">Current Player: White</div>
+            <button id="reset-btn">Reset Game</button>
+        </div>
+        <div class="chess-board" id="chess-board"></div>
+        <div class="instructions">
+            <p><strong>Instructions:</strong> Click on a piece to select it, then click on a destination square to move.</p>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
