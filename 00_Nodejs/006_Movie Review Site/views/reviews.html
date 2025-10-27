@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Reviews - Movie Review Site</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🎬 Movie Review Site</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/reviews">View Reviews</a></li>
+                <li><a href="/add-review">Add Review</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <h2>All Movie Reviews</h2>
+            <a href="/add-review" class="btn">Add New Review</a>
+        </div>
+        
+        <div id="reviewsList">
+            <p>Loading reviews...</p>
+        </div>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
