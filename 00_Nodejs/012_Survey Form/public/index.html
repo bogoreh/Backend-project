@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Satisfaction Survey</h1>
+        <form id="surveyForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="100" required>
+            </div>
+
+            <div class="form-group">
+                <label>How satisfied are you with our service?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="satisfaction" value="Very Satisfied" required> Very Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Satisfied"> Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Neutral"> Neutral</label>
+                    <label><input type="radio" name="satisfaction" value="Unsatisfied"> Unsatisfied</label>
+                    <label><input type="radio" name="satisfaction" value="Very Unsatisfied"> Very Unsatisfied</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Which category best describes you?</label>
+                <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Student">Student</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Business Owner">Business Owner</option>
+                    <option value="Retired">Retired</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>How did you hear about us?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="source" value="Social Media"> Social Media</label>
+                    <label><input type="checkbox" name="source" value="Friend Recommendation"> Friend Recommendation</label>
+                    <label><input type="checkbox" name="source" value="Online Ad"> Online Ad</label>
+                    <label><input type="checkbox" name="source" value="Search Engine"> Search Engine</label>
+                    <label><input type="checkbox" name="source" value="Other"> Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Please share any additional feedback..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Would you recommend us to others?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="recommend" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="recommend" value="No"> No</label>
+                    <label><input type="radio" name="recommend" value="Maybe"> Maybe</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Survey</button>
+        </form>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
