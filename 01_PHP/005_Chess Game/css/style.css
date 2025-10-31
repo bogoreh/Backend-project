@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.game-info {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.player {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.status {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.chess-board {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.chess-board table {
+    border-collapse: collapse;
+    border: 2px solid #333;
+}
+
+.chess-board td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.square.white {
+    background-color: #f0d9b5;
+}
+
+.square.black {
+    background-color: #b58863;
+}
+
+.piece {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.rank-label, .file-label {
+    background-color: #eee;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+.controls {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.move-form {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 80px;
+}
+
+button, .reset-btn {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.reset-btn {
+    background: #dc3545;
+}
+
+button:hover, .reset-btn:hover {
+    opacity: 0.8;
+}
+
+.moves-history {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.moves-history h3 {
+    margin-bottom: 10px;
+}
+
+.moves-history ul {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.moves-history li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.moves-history li:last-child {
+    border-bottom: none;
+}
