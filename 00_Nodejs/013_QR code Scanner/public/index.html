@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 QR Code Scanner</h1>
+            <p>Upload an image containing a QR code to decode it</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <h2>Upload QR Code Image</h2>
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="file-input-wrapper">
+                        <input type="file" id="qrImage" name="qrcode" accept="image/*" required>
+                        <label for="qrImage" class="file-label">
+                            <span class="file-button">Choose Image</span>
+                            <span class="file-name">No file chosen</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="scan-button">Scan QR Code</button>
+                </form>
+            </div>
+
+            <div class="url-section">
+                <h2>Or Scan from URL</h2>
+                <form id="urlForm">
+                    <input type="url" id="imageUrl" name="imageUrl" 
+                           placeholder="Enter image URL (e.g., https://example.com/qr.png)" 
+                           required>
+                    <button type="submit" class="scan-button">Scan from URL</button>
+                </form>
+            </div>
+
+            <div id="result" class="result-section" style="display: none;">
+                <h2>Scan Result</h2>
+                <div class="result-box">
+                    <pre id="resultData"></pre>
+                </div>
+                <div class="actions">
+                    <button id="copyButton" class="action-button">Copy to Clipboard</button>
+                    <button id="newScanButton" class="action-button">New Scan</button>
+                </div>
+            </div>
+
+            <div id="error" class="error-section" style="display: none;">
+                <h2>Error</h2>
+                <div class="error-box">
+                    <p id="errorMessage"></p>
+                </div>
+            </div>
+
+            <div id="loading" class="loading-section" style="display: none;">
+                <div class="spinner"></div>
+                <p>Scanning QR code...</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
