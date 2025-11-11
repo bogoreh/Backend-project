@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Fender Stratocaster",
+    "category": "guitars",
+    "price": 799.99,
+    "image": "https://images.unsplash.com/photo-1558098329-a08c8f6dc2fc?w=400",
+    "description": "Classic electric guitar with versatile tone",
+    "rating": 4.8,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Yamaha Acoustic",
+    "category": "guitars",
+    "price": 349.99,
+    "image": "https://images.unsplash.com/photo-1525201548942-d8732f6617a0?w=400",
+    "description": "Beautiful acoustic guitar with rich sound",
+    "rating": 4.6,
+    "featured": false
+  },
+  {
+    "id": 3,
+    "name": "Roland Digital Piano",
+    "category": "keyboards",
+    "price": 1299.99,
+    "image": "https://images.unsplash.com/photo-1571974599782-87624638275f?w=400",
+    "description": "Professional digital piano with weighted keys",
+    "rating": 4.9,
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Pearl Drum Set",
+    "category": "drums",
+    "price": 1899.99,
+    "image": "https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=400",
+    "description": "Complete 5-piece drum kit for professionals",
+    "rating": 4.7,
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Shure SM58 Microphone",
+    "category": "accessories",
+    "price": 99.99,
+    "image": "https://images.unsplash.com/photo-1598154350001-53efa5d62da2?w=400",
+    "description": "Industry standard vocal microphone",
+    "rating": 4.8,
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Boss Katana Amp",
+    "category": "amplifiers",
+    "price": 249.99,
+    "image": "https://images.unsplash.com/photo-1545490473-d56ac6e80034?w=400",
+    "description": "Versatile guitar amplifier with multiple effects",
+    "rating": 4.5,
+    "featured": false
+  }
+]

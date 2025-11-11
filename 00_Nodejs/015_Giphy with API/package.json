@@ -1,0 +1,14 @@
+{
+  "name": "giphy-with-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Abdibogoreh",
+  "license": "ISC",
+  "type": "commonjs"
+}
