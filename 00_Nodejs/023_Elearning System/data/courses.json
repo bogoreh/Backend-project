@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "JavaScript Fundamentals",
+    "description": "Learn the basics of JavaScript programming language",
+    "instructor": "John Doe",
+    "duration": "4 weeks",
+    "price": "Free",
+    "enrolledStudents": 15,
+    "createdAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "title": "Node.js Backend Development",
+    "description": "Build scalable backend applications with Node.js",
+    "instructor": "Jane Smith",
+    "duration": "6 weeks",
+    "price": "$49.99",
+    "enrolledStudents": 8,
+    "createdAt": "2024-01-10T14:30:00.000Z"
+  },
+  {
+    "id": 3,
+    "title": "Web Design Principles",
+    "description": "Master modern web design and UX principles",
+    "instructor": "Mike Johnson",
+    "duration": "5 weeks",
+    "price": "$29.99",
+    "enrolledStudents": 12,
+    "createdAt": "2024-01-08T09:15:00.000Z"
+  }
+]

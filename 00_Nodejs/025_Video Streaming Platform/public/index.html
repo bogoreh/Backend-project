@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 Video Streaming Platform</h1>
+            <p>Stream and upload your favorite videos</p>
+        </header>
+
+        <div class="upload-section">
+            <h2>Upload Video</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="videoFile" name="video" accept="video/*" required>
+                <button type="submit">Upload Video</button>
+            </form>
+            <div id="uploadMessage" class="message"></div>
+        </div>
+
+        <div class="video-player-section">
+            <h2>Now Playing</h2>
+            <div class="video-container">
+                <video id="videoPlayer" controls>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="videoInfo" class="video-info"></div>
+        </div>
+
+        <div class="video-list-section">
+            <h2>Available Videos</h2>
+            <div id="videoList" class="video-grid">
+                <!-- Videos will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

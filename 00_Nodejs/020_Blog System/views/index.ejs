@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simple Blog</h1>
+            <a href="/posts/new" class="btn btn-primary">Create New Post</a>
+        </header>
+
+        <main>
+            <% if (posts.length === 0) { %>
+                <p class="no-posts">No posts yet. <a href="/posts/new">Create the first one!</a></p>
+            <% } else { %>
+                <div class="posts-grid">
+                    <% posts.forEach(post => { %>
+                        <article class="post-card">
+                            <h2><a href="/posts/<%= post.id %>"><%= post.title %></a></h2>
+                            <p class="post-meta">
+                                By <%= post.author %> • <%= post.createdAt.toLocaleDateString() %>
+                            </p>
+                            <p class="post-excerpt">
+                                <%= post.content.substring(0, 150) %>...
+                            </p>
+                            <div class="post-actions">
+                                <a href="/posts/<%= post.id %>" class="btn btn-secondary">Read More</a>
+                                <a href="/posts/<%= post.id %>/edit" class="btn btn-outline">Edit</a>
+                            </div>
+                        </article>
+                    <% }) %>
+                </div>
+            <% } %>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">LearnHub</h1>
+                <div class="nav-links">
+                    <a href="#courses">Courses</a>
+                    <a href="#add-course">Add Course</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to LearnHub</h1>
+                <p>Expand your knowledge with our online courses</p>
+            </div>
+        </section>
+
+        <section id="courses" class="courses-section">
+            <div class="container">
+                <h2>Available Courses</h2>
+                <div id="courses-list" class="courses-grid"></div>
+            </div>
+        </section>
+
+        <section id="add-course" class="add-course-section">
+            <div class="container">
+                <h2>Add New Course</h2>
+                <form id="course-form" class="course-form">
+                    <div class="form-group">
+                        <input type="text" id="title" placeholder="Course Title" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="description" placeholder="Course Description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="instructor" placeholder="Instructor Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="duration" placeholder="Duration (e.g., 4 weeks)">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="price" placeholder="Price (e.g., Free or $49.99)">
+                    </div>
+                    <button type="submit" class="btn-primary">Add Course</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 LearnHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
